@@ -65,17 +65,18 @@
             gap: 10px;
         }
 
-        .logo img {
-            height: 32px;
-            width: auto;
-        }
-
         .logo h1 {
             font-size: 24px;
             font-weight: 700;
             background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .logo h1:hover {
+            transform: scale(1.05);
         }
 
         nav ul {
@@ -95,29 +96,6 @@
         }
 
         nav a:hover {
-            color: var(--text-light);
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .nav-buttons {
-            display: flex;
-            gap: 12px;
-        }
-
-        .nav-buttons a {
-            color: var(--text-gray);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            padding: 8px 16px;
-            border-radius: 6px;
-            transition: all 0.2s ease-in-out;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .nav-buttons a:hover {
             color: var(--text-light);
             background-color: rgba(255, 255, 255, 0.1);
         }
@@ -216,7 +194,7 @@
         /* Stats Section */
         .stats {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin: 60px 0;
         }
@@ -742,21 +720,18 @@
 
         .footer-content {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr;
             gap: 40px;
             margin-bottom: 40px;
+            text-align: center;
         }
 
         .footer-logo {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 12px;
             margin-bottom: 16px;
-        }
-
-        .footer-logo img {
-            height: 32px;
-            width: auto;
         }
 
         .footer-logo h2 {
@@ -772,98 +747,22 @@
             font-size: 14px;
             line-height: 1.6;
             margin-bottom: 24px;
-        }
-
-        .footer-partners h3 {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-light);
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            font-style: italic;
-        }
-
-        .partner-links {
-            display: flex;
-            gap: 16px;
-        }
-
-        .partner-link {
-            color: var(--text-gray);
-            font-size: 14px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            transition: color 0.2s;
-        }
-
-        .partner-link:hover {
-            color: var(--text-light);
-        }
-
-        .footer-links {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        .footer-column h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--text-light);
-            margin-bottom: 16px;
-        }
-
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column li {
-            margin-bottom: 12px;
-        }
-
-        .footer-column a {
-            color: var(--text-gray);
-            font-size: 14px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            transition: color 0.2s;
-        }
-
-        .footer-column a:hover {
-            color: var(--text-light);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .footer-bottom {
             padding-top: 30px;
             border-top: 1px solid var(--border);
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
         .footer-copyright {
             color: var(--text-gray);
             font-size: 14px;
-        }
-
-        .footer-legal {
-            display: flex;
-            gap: 24px;
-        }
-
-        .footer-legal a {
-            color: var(--text-gray);
-            font-size: 14px;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer-legal a:hover {
-            color: var(--text-light);
         }
 
         /* Tabs */
@@ -1025,10 +924,6 @@
             .main-feature-card {
                 grid-template-columns: 1fr;
             }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 768px) {
@@ -1055,17 +950,6 @@
                 align-items: center;
             }
             
-            .footer-links {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            
-            .footer-bottom {
-                flex-direction: column;
-                gap: 16px;
-                text-align: center;
-            }
-            
             .tabs-header {
                 flex-direction: column;
             }
@@ -1080,8 +964,7 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI2RjMjYyNiIvPgo8cGF0aCBkPSJNMTYgMTBMMTAgMTZMMTYgMjJMMjIgMTZMMTYgMTBaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Nexus Logo">
-                <h1>Nexus</h1>
+                <h1 id="nexusLogo">Nexus</h1>
             </div>
             <nav>
                 <ul>
@@ -1091,10 +974,6 @@
                     <li><a href="#" class="nav-link" data-tab="support">Support</a></li>
                 </ul>
             </nav>
-            <div class="nav-buttons">
-                <a href="#"><i class="fas fa-sign-in-alt"></i> Log in</a>
-                <a href="#" class="btn btn-primary"><i class="fas fa-key"></i> Buy Key</a>
-            </div>
         </div>
     </header>
 
@@ -1122,10 +1001,6 @@
         <div class="container">
             <!-- Stats Section -->
             <section class="stats tab-content active" id="home-tab">
-                <div class="stat-card">
-                    <div class="stat-number">50K+</div>
-                    <div class="stat-label">Active Users</div>
-                </div>
                 <div class="stat-card">
                     <div class="stat-number">99.9%</div>
                     <div class="stat-label">Uptime</div>
@@ -1499,7 +1374,7 @@
                         <i class="fas fa-rocket"></i>
                     </div>
                     <h2>Ready to Transform Your Roblox Experience?</h2>
-                    <p>Join over 50,000 satisfied users who have elevated their gameplay with Nexus. Download now and experience the difference.</p>
+                    <p>Join thousands of satisfied users who have elevated their gameplay with Nexus. Download now and experience the difference.</p>
                     <div class="cta-buttons">
                         <button class="btn btn-primary" id="downloadBtn2">
                             <i class="fas fa-download"></i> Download Nexus
@@ -1516,61 +1391,13 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div>
-                    <div class="footer-logo">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI2RjMjYyNiIvPgo8cGF0aCBkPSJNMTYgMTBMMTAgMTZMMTYgMjJMMjIgMTZMMTYgMTBaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Nexus Logo">
-                        <h2>Nexus</h2>
-                    </div>
-                    <p class="footer-description">The next generation of Roblox external software. Powerful, secure, and constantly evolving.</p>
-                    <div class="footer-partners">
-                        <h3>Technology Partners</h3>
-                        <div class="partner-links">
-                            <a href="#" class="partner-link">
-                                <span>WeAreDevs</span>
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="partner-link">
-                                <span>Byfron.dev</span>
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div class="footer-logo">
+                    <h2>Nexus</h2>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h3>Products</h3>
-                        <ul>
-                            <li><a href="#">Nexus External <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">Script Hub <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">API Documentation <i class="fas fa-external-link-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Resources</h3>
-                        <ul>
-                            <li><a href="#">Documentation <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">Tutorials <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">Scripting Guides <i class="fas fa-external-link-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="#">Help Center <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">Community Forums <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">Discord Server <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">Status Page <i class="fas fa-external-link-alt"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                <p class="footer-description">The next generation of Roblox external software. Powerful, secure, and constantly evolving.</p>
             </div>
             <div class="footer-bottom">
                 <p class="footer-copyright">NEXUS.IO | Advanced Roblox External | © 2023 - 2025</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">DMCA</a>
-                </div>
             </div>
         </div>
     </footer>
@@ -1580,7 +1407,7 @@
         <div class="modal-content">
             <button class="close-modal" id="closeDiscord">&times;</button>
             <h3>Join Our Discord Community</h3>
-            <p>Connect with 20,000+ Nexus users, get support, share scripts, and stay updated with the latest releases.</p>
+            <p>Connect with thousands of Nexus users, get support, share scripts, and stay updated with the latest releases.</p>
             <a href="https://discord.gg/nexusroblox" class="discord-link" target="_blank">
                 <i class="fab fa-discord"></i> Join Nexus Discord
             </a>
@@ -1615,6 +1442,12 @@
     <script>
         // Tab functionality
         document.addEventListener('DOMContentLoaded', function() {
+            // Nexus logo refresh functionality
+            const nexusLogo = document.getElementById('nexusLogo');
+            nexusLogo.addEventListener('click', function() {
+                location.reload();
+            });
+            
             // Tab switching
             const tabBtns = document.querySelectorAll('.tab-btn');
             const tabContents = document.querySelectorAll('.tab-content');
