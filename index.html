@@ -991,7 +991,7 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <h1 id="#RRLogo">#RR</h1>
+                <h1 id="RRLogo">#RR</h1>
             </div>
             <nav>
                 <ul>
@@ -1014,9 +1014,9 @@
                     <button class="btn btn-primary" id="downloadBtn">
                         <i class="fas fa-download"></i> Download Now
                     </button>
-                    <button class="btn btn-secondary" id="discordBtn">
+                    <a href="https://discord.gg/fMyNdDjjhz" class="btn btn-secondary" id="discordBtn" target="_blank">
                         <i class="fab fa-discord"></i> Join Our Community
-                    </button>
+                    </a>
                 </div>
                 <div class="hero-badge">
                     <i class="fab fa-windows"></i>
@@ -1384,9 +1384,9 @@
                         <h2>Need Help?</h2>
                         <p>Join our Discord community for instant support, or check our knowledge base for detailed guides and troubleshooting.</p>
                         <div class="cta-buttons">
-                            <button class="btn btn-primary" id="supportDiscord">
+                            <a href="https://discord.gg/fMyNdDjjhz" class="btn btn-primary" id="supportDiscord" target="_blank">
                                 <i class="fab fa-discord"></i> Join Discord
-                            </button>
+                            </a>
                             <button class="btn btn-secondary" id="knowledgeBase">
                                 <i class="fas fa-book-open"></i> Knowledge Base
                             </button>
@@ -1406,9 +1406,9 @@
                         <button class="btn btn-primary" id="downloadBtn2">
                             <i class="fas fa-download"></i> Download #RR
                         </button>
-                        <button class="btn btn-secondary" id="discordBtn2">
+                        <a href="https://discord.gg/fMyNdDjjhz" class="btn btn-secondary" id="discordBtn2" target="_blank">
                             <i class="fab fa-discord"></i> Join Our Discord
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -1470,8 +1470,8 @@
         // Tab functionality
         document.addEventListener('DOMContentLoaded', function() {
             // #RR logo refresh functionality
-            const #RRLogo = document.getElementById('#RRLogo');
-            #RRLogo.addEventListener('click', function() {
+            const RRLogo = document.getElementById('RRLogo');
+            RRLogo.addEventListener('click', function() {
                 location.reload();
             });
             
@@ -1534,12 +1534,7 @@
             const closeDiscord = document.getElementById('closeDiscord');
             const closeDownload = document.getElementById('closeDownload');
             
-            // Get all download and discord buttons
-            const discordBtns = [
-                document.getElementById('discordBtn'), 
-                document.getElementById('discordBtn2'),
-                document.getElementById('supportDiscord')
-            ];
+            // Get all download buttons
             const downloadBtns = [
                 document.getElementById('downloadBtn'), 
                 document.getElementById('downloadBtn2'),
@@ -1548,15 +1543,6 @@
             ];
             const standardDownload = document.getElementById('standardDownload');
             const premiumDownload = document.getElementById('premiumDownload');
-            
-            // Open Discord modal
-            discordBtns.forEach(btn => {
-                if (btn) {
-                    btn.addEventListener('click', () => {
-                        discordModal.style.display = 'flex';
-                    });
-                }
-            });
             
             // Open Download modal
             downloadBtns.forEach(btn => {
@@ -1609,4 +1595,3 @@
     </script>
 </body>
 </html>
-
