@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova | Advanced Roblox External</title>
+    <title>Nexus | Advanced Roblox External</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,16 +14,16 @@
         }
 
         :root {
-            --primary: #f97316;
-            --primary-dark: #ea580c;
-            --primary-light: #fdba74;
+            --primary: #dc2626;
+            --primary-dark: #991b1b;
+            --primary-light: #f87171;
             --bg-dark: #000000;
             --bg-card: #0a0a0a;
             --bg-card-light: #171717;
             --text-light: #f8fafc;
             --text-gray: #94a3b8;
             --border: #1a1a1a;
-            --gradient: linear-gradient(135deg, #f97316, #ea580c, #dc2626);
+            --gradient: linear-gradient(135deg, #dc2626, #991b1b, #7f1d1d);
         }
 
         body {
@@ -99,6 +99,29 @@
             background-color: rgba(255, 255, 255, 0.1);
         }
 
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-buttons a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-buttons a:hover {
+            color: var(--text-light);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
         .btn {
             display: inline-flex;
             align-items: center;
@@ -124,7 +147,7 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(249, 115, 22, 0.4);
+            box-shadow: 0 5px 15px rgba(220, 38, 38, 0.4);
         }
 
         .btn-secondary {
@@ -153,7 +176,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at center, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(220, 38, 38, 0.15) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -161,7 +184,7 @@
             font-size: 60px;
             font-weight: 800;
             margin-bottom: 20px;
-            background: linear-gradient(to right, #f8fafc, #f97316);
+            background: linear-gradient(to right, #f8fafc, #dc2626);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -251,8 +274,8 @@
         }
 
         .feature-icon {
-            background-color: rgba(249, 115, 22, 0.1);
-            border: 1px solid rgba(249, 115, 22, 0.3);
+            background-color: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
             border-radius: 8px;
             padding: 12px;
             display: flex;
@@ -298,8 +321,8 @@
         }
 
         .main-feature-icon {
-            background-color: rgba(249, 115, 22, 0.1);
-            border: 1px solid rgba(249, 115, 22, 0.3);
+            background-color: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
             border-radius: 8px;
             padding: 12px;
             display: inline-flex;
@@ -367,7 +390,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at center, rgba(249, 115, 22, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(220, 38, 38, 0.1) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -412,8 +435,8 @@
         }
 
         .feature-grid-icon {
-            background-color: rgba(249, 115, 22, 0.1);
-            border: 1px solid rgba(249, 115, 22, 0.3);
+            background-color: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
             border-radius: 8px;
             padding: 12px;
             display: inline-flex;
@@ -465,8 +488,8 @@
         }
 
         .feature-column-icon {
-            background-color: rgba(249, 115, 22, 0.1);
-            border: 1px solid rgba(249, 115, 22, 0.3);
+            background-color: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
             border-radius: 8px;
             padding: 12px;
             display: flex;
@@ -529,7 +552,7 @@
         .comparison-card-header {
             padding: 24px;
             border-bottom: 1px solid var(--border);
-            background: rgba(249, 115, 22, 0.05);
+            background: rgba(220, 38, 38, 0.05);
         }
 
         .comparison-card-header h3 {
@@ -584,7 +607,7 @@
 
         .feature-tables {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             gap: 24px;
         }
 
@@ -598,7 +621,7 @@
         .feature-table-header {
             padding: 24px;
             border-bottom: 1px solid var(--border);
-            background: rgba(249, 115, 22, 0.05);
+            background: rgba(220, 38, 38, 0.05);
         }
 
         .feature-table-header h3 {
@@ -669,13 +692,13 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at center, rgba(249, 115, 22, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(220, 38, 38, 0.1) 0%, transparent 70%);
             pointer-events: none;
         }
 
         .cta-icon {
-            background-color: rgba(249, 115, 22, 0.2);
-            border: 1px solid rgba(249, 115, 22, 0.3);
+            background-color: rgba(220, 38, 38, 0.2);
+            border: 1px solid rgba(220, 38, 38, 0.3);
             border-radius: 8px;
             padding: 16px;
             display: inline-flex;
@@ -843,6 +866,46 @@
             color: var(--text-light);
         }
 
+        /* Tabs */
+        .tabs {
+            margin: 60px 0;
+        }
+
+        .tabs-header {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            color: var(--text-gray);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 16px 24px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .tab-btn:hover {
+            color: var(--text-light);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
         /* Modals */
         .modal {
             display: none;
@@ -955,7 +1018,7 @@
 
         /* Responsive */
         @media (max-width: 1024px) {
-            .stats, .features, .feature-grid, .feature-columns, .feature-tables {
+            .stats, .features, .feature-grid, .feature-columns {
                 grid-template-columns: 1fr;
             }
             
@@ -1002,6 +1065,14 @@
                 gap: 16px;
                 text-align: center;
             }
+            
+            .tabs-header {
+                flex-direction: column;
+            }
+            
+            .tab-btn {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -1009,25 +1080,29 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI2Y5NzMxNiIvPgo8cGF0aCBkPSJNMTYgMTBMMTAgMTZMMTYgMjJMMjIgMTZMMTYgMTBaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Nova Logo">
-                <h1>Nova</h1>
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI2RjMjYyNiIvPgo8cGF0aCBkPSJNMTYgMTBMMTAgMTZMMTYgMjJMMjIgMTZMMTYgMTBaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Nexus Logo">
+                <h1>Nexus</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Changelogs</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Script Hub</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="#" class="nav-link" data-tab="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-tab="features">Features</a></li>
+                    <li><a href="#" class="nav-link" data-tab="download">Download</a></li>
+                    <li><a href="#" class="nav-link" data-tab="support">Support</a></li>
                 </ul>
             </nav>
+            <div class="nav-buttons">
+                <a href="#"><i class="fas fa-sign-in-alt"></i> Log in</a>
+                <a href="#" class="btn btn-primary"><i class="fas fa-key"></i> Buy Key</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- Home Tab -->
+        <section class="hero tab-content active" id="home-tab">
             <div class="container">
-                <h1>Nova - Ultimate Roblox Experience</h1>
+                <h1>Nexus - Ultimate Roblox External</h1>
                 <p>The most advanced, feature-rich Roblox external with unparalleled performance, security, and customization.</p>
                 <div class="hero-buttons">
                     <button class="btn btn-primary" id="downloadBtn">
@@ -1045,7 +1120,8 @@
         </section>
 
         <div class="container">
-            <section class="stats">
+            <!-- Stats Section -->
+            <section class="stats tab-content active" id="home-tab">
                 <div class="stat-card">
                     <div class="stat-number">50K+</div>
                     <div class="stat-label">Active Users</div>
@@ -1064,279 +1140,356 @@
                 </div>
             </section>
 
-            <section class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+            <!-- Features Tab -->
+            <section class="tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="external-features">External Features</button>
+                    <button class="tab-btn" data-tab="performance">Performance</button>
+                    <button class="tab-btn" data-tab="security">Security</button>
+                </div>
+
+                <!-- External Features Tab -->
+                <div class="tab-content active" id="external-features-tab">
+                    <div class="features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-crosshairs"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Aimbot & Silent Aim</h3>
+                                <p>Advanced targeting system with multiple aim modes and customizable settings for precise control.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>50+ ESP Options</h3>
+                                <p>Comprehensive ESP system with player, item, and environmental tracking with full customization.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Custom Crosshairs</h3>
+                                <p>Fully customizable crosshair system with dynamic elements and performance optimization.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-content">
-                        <h3>Advanced Security</h3>
-                        <p>Military-grade encryption and anti-detection systems keep your account completely safe.</p>
+
+                    <div class="feature-grid">
+                        <div class="feature-grid-card">
+                            <div class="feature-grid-icon">
+                                <i class="fas fa-skull"></i>
+                            </div>
+                            <h3>Combat Features</h3>
+                            <p>Advanced combat utilities including Kill All, Fling All, and DeSync protection for competitive advantage.</p>
+                            <div class="feature-list">
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>One-click elimination systems</span>
+                                </div>
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Advanced player manipulation</span>
+                                </div>
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Real-time combat analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-grid-card">
+                            <div class="feature-grid-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h3>Navigation & Utility</h3>
+                            <p>Complete navigation suite with waypoints, spectate modes, and environmental controls.</p>
+                            <div class="feature-list">
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Interactive waypoint system</span>
+                                </div>
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Player spectating tools</span>
+                                </div>
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Advanced map controls</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
+
+                <!-- Performance Tab -->
+                <div class="tab-content" id="performance-tab">
+                    <div class="main-feature">
+                        <div class="main-feature-card">
+                            <div class="main-feature-content">
+                                <div class="main-feature-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h2>Optimized Performance</h2>
+                                <p>Nexus delivers exceptional performance with our custom-built execution engine. Experience buttery smooth operation even on lower-end systems without any compromises on power or functionality.</p>
+                                <div class="feature-list">
+                                    <div class="feature-list-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Optimized memory management</span>
+                                    </div>
+                                    <div class="feature-list-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Multi-threaded execution</span>
+                                    </div>
+                                    <div class="feature-list-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Hardware acceleration support</span>
+                                    </div>
+                                    <div class="feature-list-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Advanced caching system</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-feature-image">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiByeD0iOCIgZmlsbD0iIzBhMGEwYSIvPgo8cmVjdCB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0NjAiIGhlaWdodD0iMzEwIiByeD0iNCIgZmlsbD0iIzE3MTcxNyIvPgo8cmVjdCB4PSI0MCIgeT0iNTAiIHdpZHRoPSI0MjAiIGhlaWdodD0iMjUwIiByeD0iNCIgZmlsbD0iIzFhMWExYSIvPgo8cmVjdCB4PSI2MCIgeT0iODAiIHdpZHRoPSIzODAiIGhlaWdodD0iNDAiIHJ4PSIyIiBmaWxsPSIjZGMzNjM2Ii8+CjxyZWN0IHg9IjYwIiB5PSIxNDAiIHdpZHRoPSIzODAiIGhlaWdodD0iMjAiIHJ4PSIyIiBmaWxsPSIjOTRhM2I4IiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8cmVjdCB4PSI2MCIgeT0iMTgwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwIiByeD0iMiIgZmlsbD0iIzk0YTNiOCIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPHJlY3QgeD0iNjAiIHk9IjIyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyMCIgcng9IjIiIGZpbGw9IiM5NGEzYjgiIGZpbGwtb3BhY2l0eT0iMC41Ii8+CjxyZWN0IHg9IjYwIiB5PSIyNjAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAiIHJ4PSIyIiBmaWxsPSIjOTRhM2I4IiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4K" alt="Performance Metrics">
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-content">
-                        <h3>Lightning Fast</h3>
-                        <p>Optimized execution engine with minimal resource usage for maximum performance.</p>
+
+                    <div class="feature-columns">
+                        <div class="feature-column-card">
+                            <div class="feature-column-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="feature-column-content">
+                                <h3>Low Resource Usage</h3>
+                                <p>Optimized to use minimal system resources while delivering maximum performance and stability.</p>
+                            </div>
+                        </div>
+                        <div class="feature-column-card">
+                            <div class="feature-column-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="feature-column-content">
+                                <h3>Unmatched Stability</h3>
+                                <p>Rock-solid stability with crash protection and automatic recovery systems built-in.</p>
+                            </div>
+                        </div>
+                        <div class="feature-column-card">
+                            <div class="feature-column-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="feature-column-content">
+                                <h3>Optimized Rendering</h3>
+                                <p>Advanced rendering techniques that maximize visual quality while minimizing performance impact.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-sync-alt"></i>
+
+                <!-- Security Tab -->
+                <div class="tab-content" id="security-tab">
+                    <div class="feature-grid">
+                        <div class="feature-grid-card">
+                            <div class="feature-grid-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Advanced Security</h3>
+                            <p>Military-grade encryption and anti-detection systems keep your account completely safe from detection.</p>
+                            <div class="feature-list">
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Advanced encryption protocols</span>
+                                </div>
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Real-time detection avoidance</span>
+                                </div>
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Stealth operation mode</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-grid-card">
+                            <div class="feature-grid-icon">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
+                            <h3>Complete Anonymity</h3>
+                            <p>Total privacy protection with no data logging and complete operational stealth.</p>
+                            <div class="feature-list">
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Zero data collection</span>
+                                </div>
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Anonymous operation</span>
+                                </div>
+                                <div class="feature-list-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Secure communications</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-content">
-                        <h3>Auto Updates</h3>
-                        <p>Automatic updates within hours of new Roblox patches. Never worry about compatibility.</p>
+
+                    <div class="features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Auto Updates</h3>
+                                <p>Automatic updates within hours of new Roblox patches. Never worry about compatibility issues.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Custom Injection</h3>
+                                <p>Proprietary injection system with advanced memory protection and zero vulnerability footprint.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-cloud-download-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Script Library</h3>
+                                <p>Access to 75,000+ scripts through our integrated cloud library with automatic updates.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="main-feature">
-                <div class="main-feature-card">
-                    <div class="main-feature-content">
-                        <div class="main-feature-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h2>Next-Generation Performance</h2>
-                        <p>Nova delivers exceptional performance with our custom-built execution engine. Experience buttery smooth operation even on lower-end systems without any compromises on power or functionality.</p>
-                        <div class="feature-list">
-                            <div class="feature-list-item">
-                                <i class="fas fa-check"></i>
-                                <span>Optimized memory management</span>
-                            </div>
-                            <div class="feature-list-item">
-                                <i class="fas fa-check"></i>
-                                <span>Multi-threaded execution</span>
-                            </div>
-                            <div class="feature-list-item">
-                                <i class="fas fa-check"></i>
-                                <span>Hardware acceleration support</span>
-                            </div>
-                            <div class="feature-list-item">
-                                <i class="fas fa-check"></i>
-                                <span>Advanced caching system</span>
-                            </div>
-                        </div>
+            <!-- Download Tab -->
+            <section class="tab-content" id="download-tab">
+                <div class="comparison">
+                    <div class="comparison-header">
+                        <h2>Download Nexus</h2>
+                        <p>Choose the version that fits your needs. Both versions include our core technology with different feature sets.</p>
                     </div>
-                    <div class="main-feature-image">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiByeD0iOCIgZmlsbD0iIzBhMGEwYSIvPgo8cmVjdCB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0NjAiIGhlaWdodD0iMzEwIiByeD0iNCIgZmlsbD0iIzE3MTcxNyIvPgo8cmVjdCB4PSI0MCIgeT0iNTAiIHdpZHRoPSI0MjAiIGhlaWdodD0iMjUwIiByeD0iNCIgZmlsbD0iIzFhMWExYSIvPgo8cmVjdCB4PSI2MCIgeT0iODAiIHdpZHRoPSIzODAiIGhlaWdodD0iNDAiIHJ4PSIyIiBmaWxsPSIjZjk3MzE2Ii8+CjxyZWN0IHg9IjYwIiB5PSIxNDAiIHdpZHRoPSIzODAiIGhlaWdodD0iMjAiIHJ4PSIyIiBmaWxsPSIjOTRhM2I4IiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8cmVjdCB4PSI2MCIgeT0iMTgwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwIiByeD0iMiIgZmlsbD0iIzk0YTNiOCIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPHJlY3QgeD0iNjAiIHk9IjIyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyMCIgcng9IjIiIGZpbGw9IiM5NGEzYjgiIGZpbGwtb3BhY2l0eT0iMC41Ii8+CjxyZWN0IHg9IjYwIiB5PSIyNjAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAiIHJ4PSIyIiBmaWxsPSIjOTRhM2I4IiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4K" alt="Nova Interface">
-                    </div>
-                </div>
-            </section>
 
-            <section class="feature-grid">
-                <div class="feature-grid-card">
-                    <div class="feature-grid-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Multi-instance Support</h3>
-                    <p>Run multiple game instances simultaneously without performance issues. Perfect for auto farming, account management, and advanced scripting scenarios.</p>
-                    <div class="feature-list">
-                        <div class="feature-list-item">
-                            <i class="fas fa-check"></i>
-                            <span>Unlimited simultaneous instances</span>
+                    <div class="comparison-card">
+                        <div class="comparison-card-header">
+                            <h3><i class="fas fa-download"></i> Version Comparison</h3>
                         </div>
-                        <div class="feature-list-item">
-                            <i class="fas fa-check"></i>
-                            <span>Synchronized script execution</span>
-                        </div>
-                        <div class="feature-list-item">
-                            <i class="fas fa-check"></i>
-                            <span>Zero performance impact</span>
-                        </div>
-                        <div class="feature-list-item">
-                            <i class="fas fa-check"></i>
-                            <span>One-click instance management</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-grid-card">
-                    <div class="feature-grid-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Custom Coded API & Injection</h3>
-                    <p>Built from scratch with proprietary technology. Our custom injection system is virtually undetectable and significantly more stable than competitors' solutions.</p>
-                    <div class="feature-list">
-                        <div class="feature-list-item">
-                            <i class="fas fa-check"></i>
-                            <span>100% custom injection engine</span>
-                        </div>
-                        <div class="feature-list-item">
-                            <i class="fas fa-check"></i>
-                            <span>Proprietary API framework</span>
-                        </div>
-                        <div class="feature-list-item">
-                            <i class="fas fa-check"></i>
-                            <span>Zero vulnerability footprint</span>
-                        </div>
-                        <div class="feature-list-item">
-                            <i class="fas fa-check"></i>
-                            <span>Advanced memory protection</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="feature-columns">
-                <div class="feature-column-card">
-                    <div class="feature-column-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <div class="feature-column-content">
-                        <h3>Rapid Updates</h3>
-                        <p>New versions deployed within 2-4 hours of any Roblox update. Our dedicated team ensures maximum uptime and compatibility.</p>
-                    </div>
-                </div>
-                <div class="feature-column-card">
-                    <div class="feature-column-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <div class="feature-column-content">
-                        <h3>24/7 Premium Support</h3>
-                        <p>Expert support team available around the clock. Premium users receive priority assistance with average response times under 10 minutes.</p>
-                    </div>
-                </div>
-                <div class="feature-column-card">
-                    <div class="feature-column-icon">
-                        <i class="fas fa-cloud-download-alt"></i>
-                    </div>
-                    <div class="feature-column-content">
-                        <h3>Massive Script Library</h3>
-                        <p>Access to 75,000+ scripts through our integrated cloud library. Advanced search, ratings, and automatic updates included.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="comparison">
-                <div class="comparison-header">
-                    <h2>Compare Our Products</h2>
-                    <p>Nova offers two specialized solutions for different use cases. Both share our core technology but are optimized for specific scenarios. Choose the one that fits your needs best.</p>
-                </div>
-
-                <div class="comparison-card">
-                    <div class="comparison-card-header">
-                        <h3><i class="fas fa-arrows-left-right"></i> Nova Executor VS Nova External</h3>
-                    </div>
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>PRODUCT</th>
-                                <th>EXTERNAL</th>
-                                <th>EXECUTOR</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="product-name">Key Duration</td>
-                                <td>24 Hours</td>
-                                <td>24 Hours</td>
-                            </tr>
-                            <tr>
-                                <td class="product-name">100% Undetectable</td>
-                                <td><i class="fas fa-check status-check"></i></td>
-                                <td><i class="fas fa-times status-cross"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="product-name">Artisanally Developed</td>
-                                <td><i class="fas fa-check status-check"></i></td>
-                                <td><i class="fas fa-check status-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="product-name">Break-neck Update Speed</td>
-                                <td><i class="fas fa-check status-check"></i></td>
-                                <td><i class="fas fa-check status-check"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="feature-tables">
-                    <div class="feature-table-card">
-                        <div class="feature-table-header">
-                            <h3>External Features</h3>
-                        </div>
-                        <table class="feature-table">
+                        <table class="comparison-table">
                             <thead>
                                 <tr>
                                     <th>FEATURE</th>
-                                    <th>STATUS</th>
+                                    <th>FREE</th>
+                                    <th>PREMIUM</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="feature-name">Aimbot, Silent Aim</td>
+                                    <td class="product-name">Aimbot & Silent Aim</td>
+                                    <td><i class="fas fa-check status-check"></i></td>
                                     <td><i class="fas fa-check status-check"></i></td>
                                 </tr>
                                 <tr>
-                                    <td class="feature-name">50+ ESP Options</td>
+                                    <td class="product-name">ESP Options</td>
+                                    <td>Basic (10+)</td>
+                                    <td>Advanced (50+)</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-name">Custom Crosshairs</td>
+                                    <td><i class="fas fa-check status-check"></i></td>
                                     <td><i class="fas fa-check status-check"></i></td>
                                 </tr>
                                 <tr>
-                                    <td class="feature-name">Custom Crosshairs</td>
+                                    <td class="product-name">Combat Features</td>
+                                    <td>Limited</td>
+                                    <td>Full Access</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-name">Script Library</td>
+                                    <td>10,000 scripts</td>
+                                    <td>75,000+ scripts</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-name">Priority Support</td>
+                                    <td><i class="fas fa-times status-cross"></i></td>
                                     <td><i class="fas fa-check status-check"></i></td>
                                 </tr>
                                 <tr>
-                                    <td class="feature-name">Kill All, Fling All, DeSync</td>
+                                    <td class="product-name">Auto Updates</td>
                                     <td><i class="fas fa-check status-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Silent Aim, Spectate Player, Waypoints</td>
-                                    <td><i class="fas fa-check status-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Offset Viewer, FOV Changer</td>
                                     <td><i class="fas fa-check status-check"></i></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <div class="feature-table-card">
-                        <div class="feature-table-header">
-                            <h3>Executor Features</h3>
+                    <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                        <button class="btn btn-primary" id="downloadFree">
+                            <i class="fas fa-download"></i> Download Free
+                        </button>
+                        <button class="btn btn-secondary" id="downloadPremium">
+                            <i class="fas fa-crown"></i> Get Premium
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Support Tab -->
+            <section class="tab-content" id="support-tab">
+                <div class="feature-columns">
+                    <div class="feature-column-card">
+                        <div class="feature-column-icon">
+                            <i class="fas fa-headset"></i>
                         </div>
-                        <table class="feature-table">
-                            <thead>
-                                <tr>
-                                    <th>FEATURE</th>
-                                    <th>STATUS</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="feature-name">100% sUNC & UNC Scores</td>
-                                    <td><i class="fas fa-check status-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Lua Armor, Luarph, And Moonsec Support</td>
-                                    <td><i class="fas fa-check status-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Works On Any Game</td>
-                                    <td><i class="fas fa-check status-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Lightning Fast Injection</td>
-                                    <td><i class="fas fa-check status-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Custom Injector</td>
-                                    <td><i class="fas fa-check status-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">All Func. Libraries Added</td>
-                                    <td><i class="fas fa-check status-check"></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="feature-column-content">
+                            <h3>24/7 Support</h3>
+                            <p>Our expert support team is available around the clock to help with any issues or questions you may have.</p>
+                        </div>
+                    </div>
+                    <div class="feature-column-card">
+                        <div class="feature-column-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="feature-column-content">
+                            <h3>Documentation</h3>
+                            <p>Comprehensive guides and tutorials to help you get the most out of Nexus features and capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="feature-column-card">
+                        <div class="feature-column-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="feature-column-content">
+                            <h3>Video Tutorials</h3>
+                            <p>Step-by-step video guides covering installation, configuration, and advanced feature usage.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="comparison-note">
-                    <p>The comparison list only represents a small selection of our features. For a full breakdown of all features, please visit our documentation <a href="#">here</a>.</p>
+                <div class="cta-section">
+                    <div class="container">
+                        <div class="cta-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h2>Need Help?</h2>
+                        <p>Join our Discord community for instant support, or check our knowledge base for detailed guides and troubleshooting.</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn-primary" id="supportDiscord">
+                                <i class="fab fa-discord"></i> Join Discord
+                            </button>
+                            <button class="btn btn-secondary" id="knowledgeBase">
+                                <i class="fas fa-book-open"></i> Knowledge Base
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1346,10 +1499,10 @@
                         <i class="fas fa-rocket"></i>
                     </div>
                     <h2>Ready to Transform Your Roblox Experience?</h2>
-                    <p>Join over 50,000 satisfied users who have elevated their gameplay with Nova. Download now and experience the difference.</p>
+                    <p>Join over 50,000 satisfied users who have elevated their gameplay with Nexus. Download now and experience the difference.</p>
                     <div class="cta-buttons">
                         <button class="btn btn-primary" id="downloadBtn2">
-                            <i class="fas fa-download"></i> Download Nova
+                            <i class="fas fa-download"></i> Download Nexus
                         </button>
                         <button class="btn btn-secondary" id="discordBtn2">
                             <i class="fab fa-discord"></i> Join Our Discord
@@ -1365,8 +1518,8 @@
             <div class="footer-content">
                 <div>
                     <div class="footer-logo">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI2Y5NzMxNiIvPgo8cGF0aCBkPSJNMTYgMTBMMTAgMTZMMTYgMjJMMjIgMTZMMTYgMTBaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Nova Logo">
-                        <h2>Nova</h2>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI2RjMjYyNiIvPgo8cGF0aCBkPSJNMTYgMTBMMTAgMTZMMTYgMjJMMjIgMTZMMTYgMTBaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Nexus Logo">
+                        <h2>Nexus</h2>
                     </div>
                     <p class="footer-description">The next generation of Roblox external software. Powerful, secure, and constantly evolving.</p>
                     <div class="footer-partners">
@@ -1387,16 +1540,16 @@
                     <div class="footer-column">
                         <h3>Products</h3>
                         <ul>
-                            <li><a href="#">Nova External <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">Nova Executor <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="#">Nexus External <i class="fas fa-external-link-alt"></i></a></li>
                             <li><a href="#">Script Hub <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="#">API Documentation <i class="fas fa-external-link-alt"></i></a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h3>Resources</h3>
                         <ul>
                             <li><a href="#">Documentation <i class="fas fa-external-link-alt"></i></a></li>
-                            <li><a href="#">API Reference <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="#">Tutorials <i class="fas fa-external-link-alt"></i></a></li>
                             <li><a href="#">Scripting Guides <i class="fas fa-external-link-alt"></i></a></li>
                         </ul>
                     </div>
@@ -1412,7 +1565,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright">NOVA.IO | Advanced Roblox External | © 2023 - 2025</p>
+                <p class="footer-copyright">NEXUS.IO | Advanced Roblox External | © 2023 - 2025</p>
                 <div class="footer-legal">
                     <a href="#">Privacy</a>
                     <a href="#">Terms</a>
@@ -1427,9 +1580,9 @@
         <div class="modal-content">
             <button class="close-modal" id="closeDiscord">&times;</button>
             <h3>Join Our Discord Community</h3>
-            <p>Connect with 20,000+ Nova users, get support, share scripts, and stay updated with the latest releases.</p>
-            <a href="https://discord.gg/novaroblox" class="discord-link" target="_blank">
-                <i class="fab fa-discord"></i> Join Nova Discord
+            <p>Connect with 20,000+ Nexus users, get support, share scripts, and stay updated with the latest releases.</p>
+            <a href="https://discord.gg/nexusroblox" class="discord-link" target="_blank">
+                <i class="fab fa-discord"></i> Join Nexus Discord
             </a>
         </div>
     </div>
@@ -1438,20 +1591,20 @@
     <div class="modal" id="downloadModal">
         <div class="modal-content">
             <button class="close-modal" id="closeDownload">&times;</button>
-            <h3>Download Nova</h3>
+            <h3>Download Nexus</h3>
             <p>Choose your preferred version:</p>
             <div class="download-options">
                 <div class="download-option" id="standardDownload">
                     <i class="fas fa-download"></i>
                     <div class="download-info">
-                        <h4>Nova Free</h4>
+                        <h4>Nexus Free</h4>
                         <p>Basic features with limited script support</p>
                     </div>
                 </div>
                 <div class="download-option" id="premiumDownload">
                     <i class="fas fa-crown"></i>
                     <div class="download-info">
-                        <h4>Nova Premium</h4>
+                        <h4>Nexus Premium</h4>
                         <p>Full feature access + priority support</p>
                     </div>
                 </div>
@@ -1460,60 +1613,138 @@
     </div>
 
     <script>
-        // Get modal elements
-        const discordModal = document.getElementById('discordModal');
-        const downloadModal = document.getElementById('downloadModal');
-        const closeDiscord = document.getElementById('closeDiscord');
-        const closeDownload = document.getElementById('closeDownload');
-        
-        // Get button elements
-        const discordBtns = [document.getElementById('discordBtn'), document.getElementById('discordBtn2')];
-        const downloadBtns = [document.getElementById('downloadBtn'), document.getElementById('downloadBtn2')];
-        const standardDownload = document.getElementById('standardDownload');
-        const premiumDownload = document.getElementById('premiumDownload');
-        
-        // Open Discord modal
-        discordBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                discordModal.style.display = 'flex';
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Function to switch tabs
+            function switchTab(tabId) {
+                // Hide all tab contents
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Remove active class from all tab buttons
+                tabBtns.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Show selected tab content
+                const selectedTab = document.getElementById(tabId + '-tab');
+                if (selectedTab) {
+                    selectedTab.classList.add('active');
+                }
+                
+                // Add active class to clicked tab button
+                const clickedBtn = document.querySelector(`[data-tab="${tabId}"]`);
+                if (clickedBtn) {
+                    clickedBtn.classList.add('active');
+                }
+            }
+            
+            // Add click event to tab buttons
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    switchTab(tabId);
+                });
             });
-        });
-        
-        // Open Download modal
-        downloadBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                downloadModal.style.display = 'flex';
+            
+            // Add click event to nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tabId = this.getAttribute('data-tab');
+                    switchTab(tabId);
+                    
+                    // Scroll to top of main content
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
             });
-        });
-        
-        // Close modals
-        closeDiscord.addEventListener('click', () => {
-            discordModal.style.display = 'none';
-        });
-        
-        closeDownload.addEventListener('click', () => {
-            downloadModal.style.display = 'none';
-        });
-        
-        // Close modals when clicking outside
-        window.addEventListener('click', (e) => {
-            if (e.target === discordModal) {
+            
+            // Modal functionality
+            const discordModal = document.getElementById('discordModal');
+            const downloadModal = document.getElementById('downloadModal');
+            const closeDiscord = document.getElementById('closeDiscord');
+            const closeDownload = document.getElementById('closeDownload');
+            
+            // Get all download and discord buttons
+            const discordBtns = [
+                document.getElementById('discordBtn'), 
+                document.getElementById('discordBtn2'),
+                document.getElementById('supportDiscord')
+            ];
+            const downloadBtns = [
+                document.getElementById('downloadBtn'), 
+                document.getElementById('downloadBtn2'),
+                document.getElementById('downloadFree'),
+                document.getElementById('downloadPremium')
+            ];
+            const standardDownload = document.getElementById('standardDownload');
+            const premiumDownload = document.getElementById('premiumDownload');
+            
+            // Open Discord modal
+            discordBtns.forEach(btn => {
+                if (btn) {
+                    btn.addEventListener('click', () => {
+                        discordModal.style.display = 'flex';
+                    });
+                }
+            });
+            
+            // Open Download modal
+            downloadBtns.forEach(btn => {
+                if (btn) {
+                    btn.addEventListener('click', () => {
+                        downloadModal.style.display = 'flex';
+                    });
+                }
+            });
+            
+            // Close modals
+            closeDiscord.addEventListener('click', () => {
                 discordModal.style.display = 'none';
-            }
-            if (e.target === downloadModal) {
+            });
+            
+            closeDownload.addEventListener('click', () => {
                 downloadModal.style.display = 'none';
+            });
+            
+            // Close modals when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target === discordModal) {
+                    discordModal.style.display = 'none';
+                }
+                if (e.target === downloadModal) {
+                    downloadModal.style.display = 'none';
+                }
+            });
+            
+            // Download option handlers
+            standardDownload.addEventListener('click', () => {
+                alert('Starting download of Nexus Free...');
+                downloadModal.style.display = 'none';
+            });
+            
+            premiumDownload.addEventListener('click', () => {
+                alert('Redirecting to Nexus Premium purchase...');
+                downloadModal.style.display = 'none';
+            });
+            
+            // Knowledge base button
+            const knowledgeBaseBtn = document.getElementById('knowledgeBase');
+            if (knowledgeBaseBtn) {
+                knowledgeBaseBtn.addEventListener('click', () => {
+                    alert('Opening Knowledge Base...');
+                    // In a real implementation, this would redirect to the knowledge base
+                });
             }
-        });
-        
-        // Download option handlers
-        standardDownload.addEventListener('click', () => {
-            alert('Starting download of Nova Free...');
-            downloadModal.style.display = 'none';
-        });
-        
-        premiumDownload.addEventListener('click', () => {
-            alert('Redirecting to Nova Premium...');
-            downloadModal.style.display = 'none';
         });
     </script>
 </body>
